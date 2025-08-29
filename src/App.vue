@@ -4,6 +4,9 @@ import { onMounted, ref, watchEffect } from "vue";
 import { VueLenis } from "lenis/vue";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
+import Hero from "./components/ui/Hero/index.js";
+import Navbar from "./components/ui/Navbar/index.js";
+
 const lenisRef = ref();
 
 watchEffect((onInvalidate) => {
@@ -29,5 +32,9 @@ onMounted(() => {
 </script>
 
 <template>
-  <VueLenis root ref="lenisRef" :options="{ autoRaf: false }" />
+  <div class="h-screen bg-primary">
+    <Navbar />
+    <VueLenis root ref="lenisRef" :options="{ autoRaf: false }" />
+    <Hero />
+  </div>
 </template>

@@ -7,3 +7,12 @@
         font-family: 'Noto Sans KR', sans-serif;
     }
 }
+
+@theme{
+    --color-primary: #031926;
+    --color-secondary: #fcfcfc
+}
+
+@layer components{
+
+}
