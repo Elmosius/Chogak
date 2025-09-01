@@ -13,6 +13,8 @@
     --color-secondary: #fcfcfc
 }
 
-@layer components{
-
+@layer utilities{
+    img {
+        @apply w-75 h-110  object-cover rounded-xl will-change-transform ;
+    }
 }

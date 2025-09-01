@@ -1,11 +1,13 @@
 <script setup>
 import gsap from "gsap";
-import { onMounted, ref, watchEffect } from "vue";
+import { ref, watchEffect } from "vue";
 import { VueLenis } from "lenis/vue";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger, Observer } from "gsap/all";
 
 import Hero from "./components/ui/Hero/index.js";
 import Navbar from "./components/ui/Navbar/index.js";
+
+gsap.registerPlugin(ScrollTrigger, Observer);
 
 const lenisRef = ref();
 
@@ -25,14 +27,10 @@ watchEffect((onInvalidate) => {
     gsap.ticker.remove(update);
   });
 });
-
-onMounted(() => {
-  gsap.registerPlugin(ScrollTrigger);
-});
 </script>
 
 <template>
-  <div class="h-screen bg-primary">
+  <div class="h-screen w-screen bg-primary overflow-hidden">
     <Navbar />
     <VueLenis root ref="lenisRef" :options="{ autoRaf: false }" />
     <Hero />
