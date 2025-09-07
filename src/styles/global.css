@@ -1,20 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
 
-@import "tailwindcss";
+@import 'tailwindcss';
 
 @layer base {
-    body{
-        font-family: 'Noto Sans KR', sans-serif;
-    }
+  body {
+    font-family: 'Noto Sans KR', sans-serif;
+  }
 }
 
-@theme{
-    --color-primary: #031926;
-    --color-secondary: #fcfcfc
+@theme {
+  --color-primary: #031926;
+  --color-secondary: #fcfcfc;
 }
 
-@layer utilities{
-    img {
-        @apply w-75 h-110  object-cover rounded-xl will-change-transform ;
-    }
+@layer utilities {
+  img {
+    @apply w-75 h-110 object-left object-cover rounded-xl will-change-transform;
+  }
 }
