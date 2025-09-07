@@ -5,7 +5,6 @@ import useMouseScroll from '../../../utils/useMouseScroll';
 import { images } from '../../../contants';
 
 const gallery = ref<HTMLElement | null>(null);
-const center = ref<HTMLElement | null>(null);
 const scrollY = useMouseScroll();
 
 onMounted(() => {
