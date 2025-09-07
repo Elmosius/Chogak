@@ -1,5 +1,24 @@
-# Vue 3 + TypeScript + Vite
+# 🎴 Chogak (조각)
 
-This template should help get you started developing with Vue 3 and TypeScript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+**Chogak** (*Fragments*) adalah mini project **Photo Gallery Animation**. Nama *Chogak* berarti *“potongan”* atau *“fragment”* dalam bahasa Korea — melambangkan serpihan kecil dari momen dan keindahan yang ditangkap dalam foto. Website ini masih dalam tahap pengembangan (saat ini optimal di desktop, versi mobile menyusul ✨).
 
-Learn more about the recommended Project Setup and IDE Support in the [Vue Docs TypeScript Guide](https://vuejs.org/guide/typescript/overview.html#project-setup).
+## 🚀 Tech Stack
+- [Vue 3](https://vuejs.org/) (Vite + TypeScript + Composition API)
+- [GSAP](https://gsap.com/) (untuk animasi foto & motion)
+- [TailwindCSS](https://tailwindcss.com/) (utility-first styling)
+
+## 📂 Project Setup
+
+```bash
+# clone repo
+git clone https://github.com/Elmosius/Chogak.git
+cd Chogak
+
+# install dependencies
+npm install
+
+# run development server
+npm run dev
+
+# build for production
+npm run build
