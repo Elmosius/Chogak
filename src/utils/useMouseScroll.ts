@@ -22,6 +22,7 @@ const useMouseScroll = (): ScrollRef => {
   onMounted(() => {
     Observer.create({
       type: 'wheel,touch,pointer',
+      preventDefault: true,
       onWheel: (e) => {
         const next = scrollY.value + e.deltaY;
         const clamped = Math.max(min, Math.min(max, next));
